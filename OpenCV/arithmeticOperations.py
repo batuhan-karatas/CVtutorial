@@ -7,8 +7,8 @@ np.set_printoptions(threshold=sys.maxsize)
 image1 = cv.imread("Resources/Photos/disaster.jpg")
 image2 = cv.imread("Resources/Photos/space.jpg")
 
-image1 = cv.resize(image1,(10,10), interpolation=cv.INTER_AREA)
-image2 = cv.resize(image2,(10,10), interpolation=cv.INTER_AREA)
+# image1 = cv.resize(image1,(10,10), interpolation=cv.INTER_AREA)
+# image2 = cv.resize(image2,(10,10), interpolation=cv.INTER_AREA)
 weightedSum = cv.addWeighted(image1,0.5,image2,0.5,1)
 
 cv.imshow("image1",image1)

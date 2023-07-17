@@ -22,7 +22,7 @@ dialet = cv.dilate(canny,(3,3), iterations=1)
 cv.imshow("dialet",dialet)
 
 #erode
-erode = cv.erode(image,(3,3),iterations=5)
+erode = cv.erode(image,(3,3),iterations=10)
 cv.imshow("erode",erode)
 
 #resize
